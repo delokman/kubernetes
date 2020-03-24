@@ -70,7 +70,7 @@ fi
 		echo "$(date): installing metallb-controller"
 		kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml;
 		kubectl apply -f "${BASE_URL}/addons/metallb-config.yaml";
-	else 
+	else
 		echo "$(date): metallb-controller installation skipped"
 	fi
 
